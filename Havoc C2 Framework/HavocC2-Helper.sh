@@ -105,4 +105,4 @@ echo "[+] To launch your Havoc C2 interactive client, run the following command:
 echo "'sudo ./havoc client'"
 echo ""
 echo "[NOTE]Your professor manages whitelisted users. He will give you your username & password for login. Please wait!"
-echo "[NOTE] ${RED}By the way, everything everyone does in the Teamserver is recorded via logging!${NOCOLOR}"
+echo -e "[NOTE] ${RED}By the way, everything everyone does in the Teamserver is recorded via logging!${NOCOLOR}"
