@@ -53,7 +53,7 @@ sudo apt install libdrm2-dev
 sleep 1
 echo 'deb http://ftp.de.debian.org/debian bookworm main' | sudo tee -a /etc/apt/sources.list
 sudo apt update
-sudo apt install -y python3-dev python3.10-dev libpython3.10 libpython3.10-dev python3.10
+sudo apt install -y python3-dev
 echo ""
 echo "=== ATTENTION ==="
 echo -e "[+] ${RED}BE PATIENT.${NOCOLOR} This next section will take a moment. It won't show anything on-screen, but it's building a lot in the background. Just let it do its thing."
