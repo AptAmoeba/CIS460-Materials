@@ -89,15 +89,15 @@ sleep 2
 echo ""
 echo "=== Connection information ==="
 sleep .2
-echo "- Name: CIS460 TeamServer"
+echo -e "- ${RED}Name: CIS460 TeamServer${NOCOLOR}"
 sleep .2
-echo "- Host: 172.16.0.165"
+echo -e "- ${RED}Host: 172.16.0.165${NOCOLOR}"
 sleep .2
-echo "- Port: 40056"
+echo -e "- ${RED}Port: 40056${NOCOLOR}"
 sleep .2
-echo "- User: (Given in class)"
+echo -e "- ${RED}User: (Given in class)${NOCOLOR}"
 sleep .2
-echo "- Pass: (Given in class)"
+echo -e "- ${RED}Pass: (Given in class)${NOCOLOR}"
 echo "=============================="
 sleep 1
 echo ""
@@ -105,4 +105,4 @@ echo "[+] To launch your Havoc C2 interactive client, run the following command:
 echo "'sudo ./havoc client'"
 echo ""
 echo "[NOTE]Your professor manages whitelisted users. He will give you your username & password for login. Please wait!"
-echo "[NOTE] By the way, everything everyone does in the Teamserver is recorded via logging!"
+echo "[NOTE] ${RED}By the way, everything everyone does in the Teamserver is recorded via logging!${NOCOLOR}"
