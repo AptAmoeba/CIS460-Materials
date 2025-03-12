@@ -69,8 +69,8 @@ echo ""
 echo "[+] Installing Teamserver requisites (This step will take a bit)"
 go mod download golang.org/x/sys
 echo "[+] Golang/x/sys installed. Starting secondary install..."
-go mod download github.com/ugorji/go
-echo "[+] Building TeamServer"
+# If Teamservers is broken (cancelled during run, etc.) Try running the following and then restarting it: #~$ rm -rf /tmp/mingw*
+go mod download github.com/ugorji/go/codec
 cd ..
 make ts-build
 echo ""
