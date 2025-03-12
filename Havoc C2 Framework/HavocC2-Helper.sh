@@ -50,7 +50,10 @@ sudo apt install libdrm2
 sudo apt install libdrm2-intel1
 sudo apt install libdrm2-dev
 ### End primary dependencies for Havoc
-echo 1
+sleep 1
+echo 'deb http://ftp.de.debian.org/debian bookworm main' | sudo tee -a /etc/apt/sources.list
+sudo apt update
+sudo apt install -y python3-dev python3.10-dev libpython3.10 libpython3.10-dev python3.10
 echo ""
 echo "=== ATTENTION ==="
 echo -e "[+] ${RED}BE PATIENT.${NOCOLOR} This next section will take a moment. It won't show anything on-screen, but it's building a lot in the background. Just let it do its thing."
@@ -60,9 +63,14 @@ echo ""
 cd teamserver/
 echo "Teamserver directory contents:"
 ls
+#install teamserver script
+./install.sh
 echo ""
-echo "[+] Installing Teamserver requisites"
+echo "[+] Installing Teamserver requisites (This step will take a bit)"
 go mod download golang.org/x/sys
+echo "[+] Golang/x/sys installed. Starting secondary install..."
+go mod download github.com/ugorji/go
+echo "[+] Building TeamServer"
 cd ..
 make ts-build
 echo ""
