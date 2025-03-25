@@ -3,7 +3,7 @@
 # === THIS SCRIPT REQUIRES SUDO PERMISSIONS TO RUN! ===
 # This script installs dependencies for the Havoc C2 Framework and deploys the Teamserver & Client. 
 # To execute the Havoc Client interface after installation, please enter the /Havoc directory and run the following command:
-# sudo ./havoc client
+# ./havoc client
 #
 # Download this script and execute it in your Desktop with sudo permissions.
 # 
@@ -25,7 +25,7 @@ echo -e ${NOCOLOR}
 ###
 echo "Verifying sudo permissions..."
 if [ "$EUID" -ne 0 ]
-  then echo "[-] Please re-run this script as root ('sudo ./HavocC2-Helper.sh')"
+  then echo "[-] Please re-run this script as root ('sudo ./HavocHelper-Parrot.sh')"
   exit
 fi
 echo ""
@@ -102,7 +102,7 @@ echo "=============================="
 sleep 1
 echo ""
 echo "[+] To launch your Havoc C2 interactive client, run the following command:"
-echo "'sudo ./havoc client'"
+echo "' ./havoc client'"
 echo ""
 echo "[NOTE]Your professor manages whitelisted users. He will give you your username & password for login. Please wait!"
 echo -e "[NOTE] ${RED}By the way, everything everyone does in the Teamserver is recorded via logging!${NOCOLOR}"
