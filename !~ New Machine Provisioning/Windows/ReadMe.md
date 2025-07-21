@@ -1,7 +1,5 @@
 # Windows Machine Prep
 
-&nbsp;
-
 ## DropSecurity.ps1
 For dedicated "Victim" machines or Malware Analysis boxes. This script disables most Windows Security controls.
 
